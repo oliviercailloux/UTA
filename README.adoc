@@ -30,39 +30,3 @@ The `BWCC.DLL` file in the root comes from the `Version complete/UTA.zip` (where
 
 The `UTAPLUS.EXE` file in the root comes from the `Version complete/UTA.zip` (where it existed twice, in two different folders), whereas the `Alternatives/UTAPLUS-from-Version-complete.EXE` comes from the `Version complete` folder. They have the same size and last-modification date (up to one hour) but are not identical.
 
-== Original files ⇒ current package
-
-Compared to the https://github.com/oliviercailloux/UTA/tree/package-as-received[original package] as downloaded from Brice Mayag’s page.
-
-* `Demo/`
-** `Bwcc.dll` ⇒ `Alternatives/Bwcc-from-Version-complete-and-Demo.dll`
-** `METRO.UTA`, `test.uta`, `UTAHELP.GID` ⇒ deleted (corrupted)
-** `UTAHELP.HLP` ⇒ `UTAHELP.HLP`
-** `UTAPDEMO.EXE` ⇒ `Alternatives/UTAPDEMO.EXE`
-** `WS_FTP.LOG` ⇒ deleted
-** `UTAPDEMO.ZIP/`
-*** `BWCC.DLL` ⇒ `BWCC.DLL`
-*** `CARSDEMO.UTA` ⇒ `Examples/CARSDEMO.UTA`
-*** `UTAHELP.HLP` ⇒ `UTAHELP.HLP`
-*** `UTAPDEMO.EXE` ⇒ deleted (corrupted)
-* `doc/`
-** `APPENDIX.DOC`, `CONTENTS.DOC`, `GRAPHE.PPT`, `MANUAL.DOC`, `SCREENS.DOC`, `TITLE.DOC`, `WS_FTP.LOG` ⇒ deleted (corrupted)
-** `MANUAL.ZIP/` ⇒ all content moved to `doc/`
-* `Version complete/`
-** `Bwcc.dll` ⇒ `Alternatives/Bwcc-from-Version-complete-and-Demo.dll`
-** `cars.f01`, `CARS.PC`, `cars.r01`, `CARS.UTA`, `foot.uta`, `METRO.UTA`, `miro.r01`, `miro.uta`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA`, `thierry.r01`, `thierry.r02`, `thierry.r03`, `thierry.uta` ⇒ all moved to `Examples/`
-** `UTAHELP.GID`, `UTAHELP.HLP` ⇒ both moved to `/`
-** `UTAPLUS.EXE` ⇒ `Alternatives/UTAPLUS-from-Version-complete.EXE`
-** `WS_FTP.LOG` ⇒ corrupted
-** `UTA.zip/`
-*** `APPENDIX.DOC`, `CONTENTS.DOC`, `GRAPHE.PPT`, `MANUAL.DOC`, `SCREENS.DOC`, `TITLE.DOC` ⇒ all moved to `Examples/`
-*** `BWCC.DLL`, `UTAHELP.GID`, `UTAHELP.HLP`, `UTAPLUS.EXE` ⇒ all moved to `/`
-*** `cars.f01`, `CARS.PC`, `cars.r01`, `CARS.UTA`, `foot.uta`, `METRO.UTA`, `miro.r01`, `miro.uta`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA`, `thierry.r02`, `thierry.r03`, `thierry.uta` ⇒ all moved to `Examples/`
-*** `thierry.r01` ⇒ `Examples/thieralt.r01`
-*** `WS_FTP.LOG` ⇒ deleted
-*** `Documents and Settings/`…`/Version complete/`
-**** `BWCC.DLL`, `UTAHELP.HLP`, `UTAPLUS.EXE` ⇒ all moved to `/`
-**** `CARS.PC`, `CARS.UTA`, `METRO.UTA`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA` ⇒ all moved to `Examples/`
-**** `UTAHELP.GID` ⇒ `Alternatives/UTAHELP-from-Documents.GID`
-* `.DS_Store` ⇒ deleted
-
