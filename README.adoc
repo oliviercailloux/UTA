@@ -24,28 +24,45 @@ UTA+ runs under Windows XP: just make sure there’s no special caracters in the
 === Linux
 I didn’t manage to make UTA+ run under http://winehq.org/[Wine]. Please contact me if you manage to use UTA+ under Linux.
 
-== List of files
+== Alternatives
 
-I have received the package as presented here (downloaded from Brice Mayag’s page), except I have extracted the zip files into folders named according to the names of the zip files, and added this `README.adoc` file and `list-files.txt`.
+The `BWCC.DLL` file in the root comes from the `Version complete/UTA.zip` (where it existed twice, in two different folders) and `Demo/UTAPDEMO.ZIP` archives (all three identical files), whereas the `Alternatives/Bwcc-from-Version-complete-and-Demo.dll` file comes from the `Version complete` and `Demo` folders (identical files). The first one is newer (1999) than the alternative one (1995).
 
-* I believe the files in `Demo` are mostly corrupted or redundant with the ones in `Version complete`.
-** The following files in `Demo` contain only FF bytes: `UTAHELP.GID`, `METRO.UTA`, `test.uta`.
-** From `Demo/UTAPDEMO.ZIP`, using “Archive Manager” under Linux, I can’t extract `UTAPDEMO.EXE`.
-** Those files in `Demo` are identical to their counterpart in `Version complete`, and have the same last-modification date: `Bwcc.dll`, `UTAHELP.HLP`.
-** The file `Demo/METRO.UTA` has the exact same size and last-modification date than its counterpart in `Version complete`.
-** The file `Demo/UTAHELP.GID` has the same size but another last-modification date than its counterpart in `Version complete`.
-** The only remaining file (apart from `WS_FTP.LOG`), which seems possibly valid and is not a duplicate, is `Demo/UTAPDEMO.EXE`.
-* I believe all the files in `doc` are corrupted, except for `doc/MANUAL.ZIP`, which contains valid versions of the same files.
-** The following files in `doc` only contain a few blocks of FF and 00 bytes: `APPENDIX.DOC`, `CONTENTS.DOC`, `GRAPHE.PPT`, `TITLE.DOC`, `WS_FTP.LOG`.
-** The two other files in `doc` will not display properly using LibreOffice: `MANUAL.DOC`, `SCREENS.DOC`.
-** The `doc/MANUAL.ZIP` file seem to contain the non-corrupted equivalent files (same sizes, same last-modification dates except for a systematic difference of one hour, but readable content, except for `GRAPHE.PPT` which I can’t open with LibreOffice but which has non trivial content, and except for `WS_FTP.LOG` which is not in the archive).
-* `Demo/UTAPDEMO.ZIP` contains three extractable files: `BWCC.DLL`, `CARSDEMO.UTA`, `UTAHELP.HLP`. `UTAHELP.HLP` is identical to the one in `Version complete` (although the one in Demo dates from 1997 versus 1999).
-* All files in `Version complete` have non-trivial byte content, except for `WS_FTP.LOG`.
-* The archive `Version complete/UTA.zip` is composed, at its root, of the content of `doc/MANUAL.ZIP` plus the content of `Version complete` (identical files and last-modification dates), except for the following differences.
-** `BWCC.DLL` is identical to `BWCC.DLL` in `Demo/fUTAPDEMO.ZIP`, not identical to `Version complete/Bwcc.dll`.
-** `thierry.r01` is different: 61 bytes, date 2004 versus 65 bytes, date 2006 in `Version complete`.
-** `UTAPLUS.EXE` has same size and last-modification date (up to one hour), but the version in the archive differs from the one in the folder.
-** There is a systematic one-hour difference in last-modification date.
-** `WS_FTP.LOG` is not corrupted in the archive.
-* The archive `Version complete/UTA.zip` contains, in the subfolder `Documents and Settings/vincent/Mes documents/logiciels mcda/envoi programme/UTA+/Version complete`, a subset of the files in the root of the same archive (identical contents and last-modification dates), except for `UTAHELP.GID` which is different (though same size).
+The `UTAPLUS.EXE` file in the root comes from the `Version complete/UTA.zip` (where it existed twice, in two different folders), whereas the `Alternatives/UTAPLUS-from-Version-complete.EXE` comes from the `Version complete` folder. They have the same size and last-modification date (up to one hour) but are not identical.
+
+== Original files ⇒ current package
+
+Compared to the https://github.com/oliviercailloux/UTA/tree/package-as-received[original package] as downloaded from Brice Mayag’s page.
+
+* `Demo/`
+** `Bwcc.dll` ⇒ `Alternatives/Bwcc-from-Version-complete-and-Demo.dll`
+** `METRO.UTA`, `test.uta`, `UTAHELP.GID` ⇒ deleted (corrupted)
+** `UTAHELP.HLP` ⇒ `UTAHELP.HLP`
+** `UTAPDEMO.EXE` ⇒ `Alternatives/UTAPDEMO.EXE`
+** `WS_FTP.LOG` ⇒ deleted
+** `UTAPDEMO.ZIP/`
+*** `BWCC.DLL` ⇒ `BWCC.DLL`
+*** `CARSDEMO.UTA` ⇒ `Examples/CARSDEMO.UTA`
+*** `UTAHELP.HLP` ⇒ `UTAHELP.HLP`
+*** `UTAPDEMO.EXE` ⇒ deleted (corrupted)
+* `doc/`
+** `APPENDIX.DOC`, `CONTENTS.DOC`, `GRAPHE.PPT`, `MANUAL.DOC`, `SCREENS.DOC`, `TITLE.DOC`, `WS_FTP.LOG` ⇒ deleted (corrupted)
+** `MANUAL.ZIP/` ⇒ all content moved to `doc/`
+* `Version complete/`
+** `Bwcc.dll` ⇒ `Alternatives/Bwcc-from-Version-complete-and-Demo.dll`
+** `cars.f01`, `CARS.PC`, `cars.r01`, `CARS.UTA`, `foot.uta`, `METRO.UTA`, `miro.r01`, `miro.uta`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA`, `thierry.r01`, `thierry.r02`, `thierry.r03`, `thierry.uta` ⇒ all moved to `Examples/`
+** `UTAHELP.GID`, `UTAHELP.HLP` ⇒ both moved to `/`
+** `UTAPLUS.EXE` ⇒ `Alternatives/UTAPLUS-from-Version-complete.EXE`
+** `WS_FTP.LOG` ⇒ corrupted
+** `UTA.zip/`
+*** `APPENDIX.DOC`, `CONTENTS.DOC`, `GRAPHE.PPT`, `MANUAL.DOC`, `SCREENS.DOC`, `TITLE.DOC` ⇒ all moved to `Examples/`
+*** `BWCC.DLL`, `UTAHELP.GID`, `UTAHELP.HLP`, `UTAPLUS.EXE` ⇒ all moved to `/`
+*** `cars.f01`, `CARS.PC`, `cars.r01`, `CARS.UTA`, `foot.uta`, `METRO.UTA`, `miro.r01`, `miro.uta`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA`, `thierry.r02`, `thierry.r03`, `thierry.uta` ⇒ all moved to `Examples/`
+*** `thierry.r01` ⇒ `Examples/thieralt.r01`
+*** `WS_FTP.LOG` ⇒ deleted
+*** `Documents and Settings/`…`/Version complete/`
+**** `BWCC.DLL`, `UTAHELP.HLP`, `UTAPLUS.EXE` ⇒ all moved to `/`
+**** `CARS.PC`, `CARS.UTA`, `METRO.UTA`, `NOTEBOOK.UTA`, `PREF.R01`, `PREF.T01`, `PREF.UTA` ⇒ all moved to `Examples/`
+**** `UTAHELP.GID` ⇒ `Alternatives/UTAHELP-from-Documents.GID`
+* `.DS_Store` ⇒ deleted
 
