@@ -26,6 +26,8 @@ I didn’t manage to make UTA+ run under http://winehq.org/[Wine]. Please contac
 
 == Alternatives
 
+Compared to the https://github.com/oliviercailloux/UTA/tree/package-as-received[original package] as downloaded from Brice Mayag’s page. (See also: https://github.com/oliviercailloux/UTA/blob/original-to-current/README.adoc#original-files-current-package[detailed matching].)
+
 The `BWCC.DLL` file in the root comes from the `Version complete/UTA.zip` (where it existed twice, in two different folders) and `Demo/UTAPDEMO.ZIP` archives (all three identical files), whereas the `Alternatives/Bwcc-from-Version-complete-and-Demo.dll` file comes from the `Version complete` and `Demo` folders (identical files). The first one is newer (1999) than the alternative one (1995).
 
 The `UTAPLUS.EXE` file in the root comes from the `Version complete/UTA.zip` (where it existed twice, in two different folders), whereas the `Alternatives/UTAPLUS-from-Version-complete.EXE` comes from the `Version complete` folder. They have the same size and last-modification date (up to one hour) but are not identical.
