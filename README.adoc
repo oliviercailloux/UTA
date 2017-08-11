@@ -4,6 +4,8 @@
 
 This is an old implementation of the http://doi.org/10.1016/0377-2217(82)90155-2[UTA] method, implemented for 16-bit Windows. It does _not_ run under recent (64-bit) versions of Windows.
 
+I do not have the source code, and do not know how to find it. (I am afraid it has probably been lost forever.)
+
 Here is the original description, as found in the `MANUAL.DOC` file.
 
 == Original description
